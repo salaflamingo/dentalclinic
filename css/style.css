@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, meirio, メイリオ,"Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 14px;
+  color: #515151;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ヘッダー */
+header {
+  border-top: 8px solid #6cc6c4;
+}
+
+.main-header {
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 135px;
+}
+
+.header-left {
+  align-self: center;
+}
+
+.header-right {
+  align-self: center;
+}
+
+.header-right p:first-child {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.header-right a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #515151;
+}
+
+.header-right img {
+  margin-right: 12px;
+}
+
+.reception-time {
+  font-size: 10px;
+  padding: 5px;
+  border: 1px solid rgba(81, 81, 81, 0.5);
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ナビバー */
+.nav-wrapper {
+  max-width: 920px;
+  margin: 0 auto 15px;
+}
+
+.top-nav .nav-list {
+  display: flex;
+}
+
+.top-nav .nav-item {
+  background: linear-gradient(#99e1df,#6cc6c4);
+  width: 20%;
+  height: 70px;
+}
+
+.top-nav .nav-item:hover {
+  background: linear-gradient(#6cc6c4,#99e1df);
+}
+
+.top-nav .nav-item {
+  border: 1px solid #6cc6c4;
+}
+
+.top-nav .nav-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.top-nav .nav-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.top-nav .nav-item a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #f6f6f6;
+}
+
+.title-ja {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.title-en {
+  font-size: 10px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+/* メインコンテンツ */
+.contents-wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.contents-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.main-wrapper {
+  width: 70%;
+}
+
+.main-wrapper img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.article {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin: 10px 0 20px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.article h2 {
+  font-size: 16px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #6cc6c4;
+}
+
+.article-top-container {
+  width: 92%;
+  margin: 15px auto;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #6cc6c4;
+  padding: 10px 0;
+}
+
+.article-container time {
+  width: 20%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.article-container p {
+  width: 75%;
+  font-size: 13px;
+}
+
+/* メインコンテンツ・医院紹介 */
+.main-wrapper {
+  margin-bottom: 20px;
+}
+
+.main-wrapper h1 {
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(#99e1df,#6cc6c4);
+  border: 1px solid #6cc6c4;
+  border-radius: 10px 10px 0 0;
+  padding: 35px 0 20px 20px;
+}
+
+.sub-conainer {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.sub-conainer h2 {
+  font-size: 16px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #6cc6c4;
+  margin: 20px 0;
+}
+
+.sub-conainer h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #6cc6c4;
+  margin-bottom: 20px;
+}
+
+.sub-conainer p {
+  font-size: 13px;
+  padding-bottom: 13px;
+}
+
+.sub-conainer span {
+  font-weight: bold;
+}
+
+/* テーブル */
+table {
+  width: 98%;
+  line-height: 3;
+  margin-bottom: 20px;
+}
+
+thead tr {
+  background-color: #d1d1d1;
+}
+
+td,th {
+  text-align: center;
+}
+
+table,td,th {
+  border-collapse: collapse;
+  border: 1px solid #919090;
+}
+
+/* メインコンテンツ・スタッフ＆アクセス */
+.doctor-photo p {
+  width: 200px;
+  height: 23px;
+  margin: 15px 0;
+  color: #fff;
+  background-color: #6cc6c4;
+  text-align: center;
+  padding: 3px 0;
+}
+
+.staff-photo {
+  margin-bottom: 10px;
+}
+
+.location-map {
+  border-bottom: 3px solid #6cc6c4;
+  padding-bottom: 10px;
+  margin-bottom: 7px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.google-map {
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.inner-container {
+  display: flex;
+}
+
+.inner-container img {
+  width: 200px;
+  height: 200px;
+}
+
+.inner-container .inner-info {
+  margin: 15px 0 0 15px;
+}
+
+/* サイドナビ */
+.side-wrapper {
+  width: 28%;
+}
+
+.side-nav {
+  border: 1px solid #6cc6c4;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+
+.side-nav h2 {
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(#99e1df,#6cc6c4);
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0 10px 12px;
+}
+
+.side-nav nav {
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+
+.side-nav nav li {
+  margin: 0 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #6cc6c4;
+  font-weight: bold;
+}
+
+.side-nav nav li span {
+  color: #6cc6c4;
+}
+
+.side-nav a {
+  color: #515151;
+}
+
+.side-nav a:hover {
+  color: #6cc6c4;
+}
+
+/* フッターナビ */
+.footer-nav {
+  max-width: 920px;
+  margin: 0 auto;
+  background-color: #6cc6c4;
+  padding: 4px 0 4px 15px;
+  border-radius: 5px;
+}
+
+.footer-nav nav ul {
+  display: flex;
+}
+
+.footer-nav nav li {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.footer-nav nav li i {
+  color: #fff;
+  margin-right: 10px;
+}
+
+
+.footer-nav nav li a {
+  color: #fff;
+}
+
+.footer-nav nav li a:hover {
+  text-decoration: underline;
+}
+/* 下層ページぱんくずリスト */
+.breadcrumb {
+  max-width: 920px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  list-style: none;
+}
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+  font-size: 11px;
+}
+.breadcrumb li:after {
+  /* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+  color: #555;
+}
+.breadcrumb li:last-child:after {
+  content: '';
+}
+.breadcrumb li a {
+  text-decoration: underline;
+  color: #6cc6c4;
+}
+.breadcrumb li a:hover {
+  color: #515151;
+}
+/* 下層ページ医院情報 */
+.info {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.info-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.info-container p {
+  margin-left: 10px;
+}
+
+.info-container p:first-child {
+  font-weight: bold;
+}
+
+/* フッター */
+.footer {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  border-top: 2px solid #6cc6c4
+}
+
+/* スマホ */
+@media(max-width:768px) {
+
+  /* ヘッダー */
+  .main-header {
+    display: block;
+    text-align: center;
+    height: 155px;
+  }
+  
+  .header-right p:first-child {
+    margin-bottom: 10px;
+  }
+    
+  .reception-time {
+    width: 220px;
+    margin: 10px auto;
+  }
+
+  /* ナビバー */
+  .nav-wrapper {
+    max-width: 738px;
+  }
+
+  .top-nav .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .top-nav .nav-item {
+    width: 48%;
+  }
+
+  .top-nav .nav-item {
+    border-radius: 5px;
+  }
+
+  .top-nav .nav-item:first-child {
+    border-radius: 10px;
+  }
+  
+  .top-nav .nav-item:last-child {
+    border-radius: 10px;
+  }
+  
+  /* メインコンテンツ */
+  .contents-wrapper {
+    max-width: 738px;
+  }
+
+  .contents-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-wrapper {
+    width: 96%;
+  }
+
+  .article-container {
+    display: block;
+  }
+
+  .article-container p {
+    width: 95%;
+    padding: 10px 0 5px 20px;
+  }
+
+  /* メインコンテンツ・スタッフ＆アクセス */
+  .inner-container {
+    display: block;
+    text-align: center;
+  }
+
+  .inner-container p {
+    margin: 10px auto 0;
+  }
+
+  .inner-container .inner-info {
+    text-align: left;
+    margin-left: 5px;
+  }  
+
+  /* サイドナビ */
+  .side-wrapper {
+    width: 96%;
+  }
+
+  .side-nav nav li {
+    padding: 10px;
+  }
+
+  .side-nav nav li span {
+    color: #6cc6c4;
+  }
+
+  /* フッターナビ */
+  .footer-nav {
+    max-width: 738px;
+    width: 94%;
+  }
+
+  .footer-nav nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav nav li {
+    margin: 5px 20px 5px 0;
+  }
+  
+  /* 医院情報 */
+  .info {
+    max-width: 738px;
+    width: 95%;
+  }
+
+  .info-container {
+    display: block;
+    text-align: right;
+  }
+
+  .info-container p {
+    margin: 8px 0;
+  }
+  
+
+
+}
